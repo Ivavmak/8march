@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1522;
+}
+.text {
+    font-size: 50px;
+    padding: 0;
+    margin-top: -190px;
+    margin-right: -500px;
+    margin-bottom: -100px;
+    margin-left: -90px;
+    font-family: 'Comic Sans MS';
+    color: #B50033;
+    opacity: 0;
+    animation: texta 1.5s linear forwards;
+    animation-delay: 3s;
+    user-select: none;
+}
+.heart {
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 2.5s linear forwards;
+}
+.hearts {
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    right: 70px;
+    bottom: 70px;
+    left: 0px;
+    animation: hearts 1s linear infinite;
+}
+
+@keyframes heart{
+    0% {
+        transform: rotate(-45deg) scale(20.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(5.0);
+    }
+}
+
+@keyframes hearts {
+    0% {
+        transform: rotate(-45deg) scale(5.2);
+    }
+    80% {
+        transform: rotate(-45deg) scale(5.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(5.2);
+    }
+}
+
+@keyframes texta{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+.hearts:before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+
+.hearts:after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
