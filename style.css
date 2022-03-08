@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    height: 1440px;
-    width: 2960px;
+    max-height: 1440px;
+    max-width: 2960px;
     display: flex;
     align-items: center;
     justify-content: center;
